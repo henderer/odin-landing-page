@@ -96,6 +96,7 @@ header a {
 }
 .header-content {
     display: flex;
+    justify-content: center;
     align-self: center;
     width: 70vw;
     text-align: left;
@@ -107,7 +108,7 @@ header a {
   text-wrap: pretty;
 }
 .header-content img {
-    width: 300px;
+    width: 400px;
 }
 .section1 {
     background-color: #ffffff;
