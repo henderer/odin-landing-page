@@ -1,0 +1,204 @@
+  /* CSS RESET from Josh Comeau */
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+/* ACTUAL CSS FOR SITE */
+
+body {
+    font-family: 'Roboto', 'Lucida Sans', 'Lucida Sans Unicode', 'Times New Roman', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* text-align: center; */
+}
+.nav {
+  display: flex;
+  padding: 8px 16px;
+  gap: 16px;
+  /* margin-bottom: 8vh; */
+}
+.nav div {
+  display: flex;
+  margin-right: auto;
+  gap: 16px;
+}
+button {
+  background-color: #3882F6;
+  color: #ffffff;
+  padding: 8px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #1F2937;
+    font-size: 24px;
+    color: #E5E7EB;
+    padding: 0 13%;
+}
+header button {
+  border: none;
+  padding: 12px 18px;
+  font-size: 16px;
+  font-weight: 600;
+}
+header a {
+    text-decoration: none;
+    color: #E5E7EB;
+    font-size: 18px;
+}
+.header-content {
+    display: flex;
+    align-self: center;
+    width: 70vw;
+    text-align: left;
+    margin: 100px 0;
+}
+.header-content div p {
+  margin-bottom: 8px;
+  padding-right: 16px;
+  text-wrap: pretty;
+}
+.header-content img {
+    width: 300px;
+}
+.section1 {
+    background-color: #ffffff;
+    text-align: center;
+    margin: 60px 0;
+}
+h2 {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 900;
+}
+.section1 img {
+    padding: 16px;
+    width: 140px;
+    border: medium solid #3882F6;
+    border-radius: 10px;
+}
+.rounded-box-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 28px;
+    margin-top:20px;
+}
+.rounded-box-content > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 190px;
+  gap: 8px;
+}
+.section2 {
+    background-color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0;
+}
+.quotebox {
+    display: flex;
+    flex-direction: column;
+    padding: 48px;
+    width: 800px;
+}
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    font-weight: 200;
+    text-wrap: pretty;
+}
+.quote-attrib {
+    font-size: 24px;
+    color: #1F2937;
+    font-weight: bold;
+    align-self: flex-end;
+}
+.section3 {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px 0;
+}
+.sign-up-box {
+    background-color: #3882F6;
+    display: flex;
+    align-items: center;
+    text-align:left;
+    border-radius: 8px;
+    padding: 2% 6%;
+    width: 60%;
+    color:#f0f0f0;
+    font-size: 18px;
+}
+h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #f0f0f0;
+}
+.section3 button {
+    width: 24%;
+    margin-left: 20px;
+    border: 3px solid #f0f0f0;
+}
+footer {
+    background-color: #1F2937;
+    border: medium solid #f0f0f0;
+    padding: 24px;
+    color: #f0f0f0;
+    text-align: center;
+}
